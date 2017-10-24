@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab5;
+package lab05;
 
 /**
  *
  * @author usuario
  */
-public class Lab5 {
+public class Lab05 {
     
 }

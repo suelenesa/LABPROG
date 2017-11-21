@@ -1,4 +1,4 @@
-package lab5;
+package lab05;
 
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package lab5;
+package lab05;
 
 
 /* Aluno 1: Herculys Sabino */

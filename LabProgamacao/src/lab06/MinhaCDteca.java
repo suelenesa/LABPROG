@@ -6,8 +6,8 @@
 package lab06;
 
 /**
- *
- * @author usuario
+ * @Suelene Sa
+ * @Herculys Sabino
  */
 public class MinhaCDteca {
     

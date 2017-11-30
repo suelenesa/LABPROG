@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @Suelene Sa
- * @Herculys Sabino
+ * 
  */
 public class CD {
     public String artista;

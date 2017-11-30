@@ -7,7 +7,7 @@ package lab06;
 
 /**
  * @Suelene Sa
- * @Herculys Sabino
+ * 
  */
 public class MinhaCDteca {
     

@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Classe que representa um CD de músicas.
+ *
  * @aluna Suelene Sa
  *
  */
@@ -16,23 +17,21 @@ public class CD {
     private int Mfaixas;
     private final List<String> listmusicas;
     private final int M = 10;
-    
-   
-    /*Construtor que recebe o título e o artista do CD como parametro.*/
 
+    /*Construtor que recebe o título e o artista do CD como parametro.*/
     /**
      *
      * @param título
      * @param artista
      * @throws Exception
      */
-
-     public CD(String título, String artista) throws Exception {
+    
+    public CD(String título, String artista) throws Exception {
         this.listmusicas = new ArrayList<>();
         if (artista != null || título != null) {
             this.artista = artista;
             this.título = título;
-            this.Mfaixas = 10;
+            this.Mfaixas = M;
         } else {
             throw new Exception(" Error: O Artista ou nome do album é nulo.");
         }
@@ -46,7 +45,7 @@ public class CD {
         return trilhaprincipal;
     }
 
-    public int getMfaixas() {/*Retorna um conjunto de musicas que compe o album*/
+    public int getMfaixas() {/*Retorna um inteiro com o numero de musicas/faixas*/
         return Mfaixas;
     }
 
@@ -87,33 +86,22 @@ public class CD {
             int faixa = i + 1;
             System.out.println(faixa + " - " + listmusicas.get(i));
         }
+        return null;
 
         /**
          *
          * @return
          */
-     
-    @Override
-        public String toString(){
-                StringBuilder string = new StringBuilder();
-		string.append("Artista: "+getArtista());
-		string.append("\nTítulo: ").append(getTítulo());
-                string.append("\n\nLista de músicas: ");
-            
-            
-            for (int i = 0; i < listmusicas.size(); i++) {
-                int faixa = i + 1;
-                System.out.println(faixa + " - " + listmusicas.get(i));
-            }
-            return string.toString();
-        }
-
     }
 
-    
+    @Override
+    public String toString() {
+        System.out.println("ARTISTA: " + getArtista() + "\nÁLBUM: " + getTítulo() + "\nNº DE FAIXAS: " + getMfaixas() + "\nTRILHA PRINCIPAL DO CD: " + getTrilhaprincipal() + "\nFAIXAS DO ALBUM:");
+        for (int i = 0; i < listmusicas.size(); i++) {
+            int faixa = i + 1;
+            System.out.println(faixa + " - " + listmusicas.get(i));
+        }
+        return super.toString();
+    }
+
 }
-
-   
-
-
-

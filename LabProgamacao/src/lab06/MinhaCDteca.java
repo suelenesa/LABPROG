@@ -8,9 +8,13 @@ import java.util.List;
  * @Suelene Sa
  *
  */
-public class MinhaCDteca {
 
-    List<CD> MeuCDs;
+
+public class MinhaCDteca {
+    
+
+    private final List<CD> MeuCDs;
+    
 
     public MinhaCDteca() {
         this.MeuCDs = new ArrayList<>();
@@ -41,7 +45,7 @@ public class MinhaCDteca {
         int cont = 0;
         for (int i = 0; i < MeuCDs.size(); i++) {
             if (nome.equals(MeuCDs.get(i).getTítulo())) {
-                MeuCDs.remove(nome);
+                boolean remove = MeuCDs.remove(nome);
                 cont++;
             }
         }
@@ -51,8 +55,7 @@ public class MinhaCDteca {
     public CD pesquisaCD(CD nome) {
         for (int i = 0; i < MeuCDs.size(); i++) {
             if (nome.equals(MeuCDs.get(i).getTítulo())) {
-                // return nome;
-            } else {
+                            } else {
                 return null;
             }
         }

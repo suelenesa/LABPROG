@@ -1,1 +1,39 @@
 
+package lab06;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * @author suelene Sa
+ */
+public class TesteMinhaCDteca{
+ 
+    @Test
+    public void verficaSeCDEstaNaCDtecaOK() throws Exception{
+       
+        MinhaCDteca teca = new MinhaCDteca();
+        CD cd = new CD("titulo", "artista");
+ 
+        teca.adicionaCD(cd);
+ 
+        String resultado = teca.pesquisaCD("título");
+ 
+        Assert.AssertEquals(cd.getTítulo(), resultado.getTítulo());
+ 
+    }
+ 
+    @Test
+    public void removeCDOK() throws Exception{
+       
+        MinhaCDteca teca = new MinhaCDteca();
+        CD cd = new CD("titulo", "artista");
+ 
+        teca.adicionaCD(cd);
+ 
+        String resultado = teca.removeCD("titulo");
+ 
+        Assert.AssertEquals(cd.getTítulo(), resultado.getTítulo());
+ 
+    }
+}

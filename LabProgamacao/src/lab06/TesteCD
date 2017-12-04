@@ -1,1 +1,49 @@
 
+package lab06;
+
+import java.util.Scanner;
+
+/**
+ * @Suelene Sa
+ *
+ */
+public class TesteCD {
+
+    private static Scanner read, read1, read2;
+
+    public static void main(String[] args) throws Exception {
+        boolean x;
+        read = new Scanner(System.in);
+        System.out.println("Olá Cadastre um CD na CDteca!");
+        System.out.print("Qual o nome do Cantor? ");
+        String artista = read.nextLine();
+        System.out.print("Digite o título do Album? ");
+        String título = read.nextLine();
+        System.out.print("Digite a quantidade de faixas do seu CD: ");
+        int Mfaixas = read.nextInt();
+
+        CD album = new CD(artista, título, Mfaixas);
+        if (Mfaixas <= 10) {
+            for (int i = 0; i < Mfaixas; i++) {
+                read1 = new Scanner(System.in);
+                int faixa = i + 1;
+                System.out.print("Digite o nome da " + faixa
+                        + "ª faixa do album: ");
+                String a = read1.nextLine();
+                album.cadastrarMusica(a);
+            }
+
+            do {
+                read2 = new Scanner(System.in);
+                System.out.println("Digite o nome da trilha principal do álbum: ");
+                String trilha = read2.nextLine();
+                x = album.setTrilhaprincipal(trilha);
+            } while (x == false);
+            System.out.println("PARABÉNS SEU ALBUM FOI CADASTRADO COM SUCESSO!");
+            String toString = album.toString();
+        } else {
+            throw new Exception(" Error: Você ultrapassou a quantidade máxima de faixas permitida!");
+        }
+
+    }
+}

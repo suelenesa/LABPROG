@@ -15,21 +15,36 @@ public class MinhaCDteca {
 
     private final List<CD> MeuCDs;
     
-
+    /**
+     *
+     */
     public MinhaCDteca() {
         this.MeuCDs = new ArrayList<>();
     }
 
+    /**
+     *
+     * @param nome
+     */
     public void adicionaCD(CD nome) {
         MeuCDs.add(nome);
 
     }
 
+    /**
+     *
+     * @param nome
+     */
     public void adicionaCDs(CD[] nome) {
         MeuCDs.addAll(Arrays.asList(nome));
     }
 
-    public CD removeCD(CD nome) {
+    /**
+     *
+     * @param nome
+     * @return
+     */
+    public String removeCD(String nome) {
         for (int i = 0; i < MeuCDs.size(); i++) {
             if (nome.equals(MeuCDs.get(i).getTítulo())) {
                 MeuCDs.remove(nome);
@@ -41,6 +56,11 @@ public class MinhaCDteca {
         return null;
     }
 
+    /**
+     *
+     * @param nome
+     * @return
+     */
     public boolean removeCDs(CD[] nome) {
         int cont = 0;
         for (int i = 0; i < MeuCDs.size(); i++) {
@@ -52,7 +72,12 @@ public class MinhaCDteca {
         return cont >= 1;
     }
 
-    public CD pesquisaCD(CD nome) {
+    /**
+     *
+     * @param nome
+     * @return
+     */
+    public String pesquisaCD(String nome) {
         for (int i = 0; i < MeuCDs.size(); i++) {
             if (nome.equals(MeuCDs.get(i).getTítulo())) {
                             } else {
@@ -62,10 +87,17 @@ public class MinhaCDteca {
         return nome;
     }
 
+    /**
+     *
+     */
     public void numeroDeCDs() {
         System.out.println(MeuCDs.size());
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         for (int i = 0; i < MeuCDs.size(); i++) {

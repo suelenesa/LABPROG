@@ -1,4 +1,3 @@
-
 package lab06;
 
 import java.util.Scanner;
@@ -27,8 +26,7 @@ public class TesteCD {
             for (int i = 0; i < Mfaixas; i++) {
                 read1 = new Scanner(System.in);
                 int faixa = i + 1;
-                System.out.print("Digite o nome da " + faixa
-                        + "ª faixa do album: ");
+                System.out.print("Digite o nome da " + faixa + "ª faixa do album: ");
                 String a = read1.nextLine();
                 album.cadastrarMusica(a);
             }

@@ -1,5 +1,7 @@
 package lab07;
-/* Aluna: Suelene Sa */
+/**
+ * @Aluna Suelene Sa
+ */
 
 public abstract class Rodoviario extends Contribuinte {
 	static double quilometro;

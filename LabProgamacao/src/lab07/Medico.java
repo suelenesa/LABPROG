@@ -1,6 +1,7 @@
 package lab07;
-
-/* @author Suelene Sa*/
+/**
+ * @Aluna Suelene Sa
+ */
 public class Medico extends Contribuinte {
 
 	private static final double TAXA_POR_PACIENTE = 10.0;

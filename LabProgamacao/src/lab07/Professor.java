@@ -1,6 +1,8 @@
 package lab07;
 
-/* Aluna: Suelene Sa*/
+/**
+ * @Aluna Suelene Sa
+ */
 
 /*Classe que define as caracterasticas de um professor */
 

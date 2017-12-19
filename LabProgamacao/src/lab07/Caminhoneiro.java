@@ -2,7 +2,6 @@ package lab07;
 
 /**
  * @Aluna Suelene Sa
- * 
  *        Classe que define todas as caracteristicas de um Caminhoneiro.
  */
 public class Caminhoneiro extends Rodoviario {

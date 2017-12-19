@@ -1,5 +1,8 @@
 package lab07;
 
+/**
+ * @Aluna Suelene Sa
+ */
 import java.util.List;
 
 public abstract class Contribuinte {

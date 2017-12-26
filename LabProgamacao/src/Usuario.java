@@ -1,4 +1,6 @@
-
+/**
+ * @Aluna Suelene Sa
+ */
 public class Usuario {
 	
 	private int notas;
@@ -16,11 +18,11 @@ public class Usuario {
 			
 
 			if (notas == -2 || notas == -1 || notas == 0 || notas == 1 || notas == 2){
-				System.out.println("Você opinou " + notas);
+				System.out.println("VocÃª opinou " + notas);
 			}
 			
 			else {
-				System.out.println("Você nao pode opinar com essa nota");
+				System.out.println("VocÃª nao pode opinar com essa nota");
 			}
 			
 			
@@ -28,7 +30,7 @@ public class Usuario {
 		
 		public void comentarAgora(String comentarios){
 			if (comentarios.length() > 140 ){
-				System.out.println("Você nao pode comentar, caracteres ultrapassaram");
+				System.out.println("VocÃª nao pode comentar, caracteres ultrapassaram");
 			}
 		}
 		

@@ -1,4 +1,6 @@
-
+/**
+ * @Aluna Suelene Sa
+ */
 public class Principal {
 
 	public static void main(String[] args) {
@@ -6,7 +8,7 @@ public class Principal {
 		Usuario u = new Usuario();
 		
 		u.opinarNota(0);
-		u.comentarAgora("Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem seddddndo utilizado desde o século XVI, quando");
+		u.comentarAgora("Lorem Ipsum Ã© simplesmente uma simulaÃ§Ã£o de texto da indÃºstria tipogrÃ¡fica e de impressos, e vem seddddndo utilizado desde o sÃ©culo XVI, quando");
 		// TODO Auto-generated method stub
 
 	}
